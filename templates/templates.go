@@ -16,7 +16,7 @@ type Template interface {
 	GetElementsSettings() []ElementProperty
 }
 
-// GetTemplateSetting will return the template corresponding to the template name
+// GetTemplateSetting is a factory that will return the template corresponding to the template name
 func GetTemplateSetting(templateName string) Template {
 	templates := map[string]Template{
 		"basic": NewBasicTemplate(),

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/rafa-acioly/dynacover/commands"
-	"github.com/spf13/cobra"
+  "github.com/rafa-acioly/dynacover/commands"
+  "github.com/spf13/cobra"
   "log"
 )
 
