@@ -10,6 +10,7 @@ func NewBasicTemplate() Template {
 	return BasicTemplate{
 		Height:   1500,
 		Width:    500,
+		PlaceHolderQuantity: 5,
 		Elements: []ElementProperty{
 			{
 				PosX: 486,
@@ -49,6 +50,7 @@ func NewBasicTemplate() Template {
 type BasicTemplate struct {
 	Height int
 	Width int
+	PlaceHolderQuantity int
 	Elements []ElementProperty
 }
 
@@ -67,5 +69,5 @@ func (b BasicTemplate) GetWidth() int {
 func (b BasicTemplate) GetSourcePath() string {
 	curDir, _ := os.Getwd()
 
-	return fmt.Sprintf("%s/%s", curDir, "/stubs/basic.png")
+	return fmt.Sprintf("%s/%s", curDir, "templates/stubs/basic.png")
 }

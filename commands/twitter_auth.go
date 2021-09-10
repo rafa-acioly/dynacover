@@ -6,7 +6,9 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var TwitterAuthCmd = &cobra.Command{
+// AuthCmd represents the command that will
+// verify if the given twitter credentials are working.
+var AuthCmd = &cobra.Command{
   Use: "auth",
   Short: "Validate the twitter auth credentials",
   Long: "Check if the twitter auth credentials are valid making a request to twitter API",

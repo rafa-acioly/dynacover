@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/rafa-acioly/dynacover/commands"
 	"github.com/spf13/cobra"
+  "log"
 )
 
 var (
@@ -17,9 +18,8 @@ var (
 func main() {
   rootCmd.PersistentFlags().StringVar(&templateFlag, "template", "basic", "choose the cover layout")
 
-  rootCmd.AddCommand(commands.TwitterAuthCmd)
-  rootCmd.AddCommand(commands.TwitterCoverCmd)
+  rootCmd.AddCommand(commands.CoverCmd)
 
-  rootCmd.Execute()
+  log.Fatal(rootCmd.Execute())
 }
 
