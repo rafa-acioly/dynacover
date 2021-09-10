@@ -1,8 +1,8 @@
 package main
 
 import (
-  "github.com/spf13/cobra"
-  "github.com/rafa-acioly/dynacover/commands"
+	"github.com/rafa-acioly/dynacover/commands"
+	"github.com/spf13/cobra"
 )
 
 var (
@@ -19,5 +19,7 @@ func main() {
 
   rootCmd.AddCommand(commands.TwitterAuthCmd)
   rootCmd.AddCommand(commands.TwitterCoverCmd)
+
+  rootCmd.Execute()
 }
 
