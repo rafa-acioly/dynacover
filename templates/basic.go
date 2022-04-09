@@ -8,9 +8,8 @@ import (
 // NewBasicTemplate returns an instance of Template for the basic cover image
 func NewBasicTemplate() Template {
 	return BasicTemplate{
-		Height:   1500,
-		Width:    500,
-		PlaceHolderQuantity: 5,
+		Height:   500,
+		Width:    1500,
 		Elements: []ElementProperty{
 			{
 				PosX: 486,

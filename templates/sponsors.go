@@ -63,7 +63,7 @@ func (c SponsorsTemplate) GetWidth() int {
 func (c SponsorsTemplate) GetSourcePath() string {
 	curDir, _ := os.Getwd()
 
-	return fmt.Sprintf("%s/%s", curDir, "stub/sponsors.png")
+	return fmt.Sprintf("%s/%s", curDir, "templates/stubs/sponsors.png")
 }
 
 func (c SponsorsTemplate) GetElementsSettings() []ElementProperty {

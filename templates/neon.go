@@ -8,8 +8,8 @@ import (
 // NewNeonTemplate returns an instance of Template for the basic cover image
 func NewNeonTemplate() Template {
 	return NeonTemplate{
-		Height:   1500,
-		Width:    500,
+		Height:   500,
+		Width:    1500,
 		Elements: []ElementProperty{
 			{
 				PosX: 486,
@@ -20,8 +20,8 @@ func NewNeonTemplate() Template {
 			{
 				PosX: 670,
 				PosY: 272,
-				Width: 130,
-				Height: 130,
+				Width: 132,
+				Height: 132,
 			},
 			{
 				PosX: 859,
@@ -63,7 +63,7 @@ func (c NeonTemplate) GetWidth() int {
 func (c NeonTemplate) GetSourcePath() string {
 	curDir, _ := os.Getwd()
 
-	return fmt.Sprintf("%s/%s", curDir, "stub/neon.png")
+	return fmt.Sprintf("%s/%s", curDir, "templates/stubs/neon.png")
 }
 
 func (c NeonTemplate) GetElementsSettings() []ElementProperty {

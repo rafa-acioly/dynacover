@@ -64,7 +64,7 @@ func (c ColorFulTemplate) GetWidth() int {
 func (c ColorFulTemplate) GetSourcePath() string {
 	curDir, _ := os.Getwd()
 
-	return fmt.Sprintf("%s/%s", curDir, "stub/colorfull.png")
+	return fmt.Sprintf("%s/%s", curDir, "templates/stubs/colorful.png")
 }
 
 func (c ColorFulTemplate) GetElementsSettings() []ElementProperty {

@@ -1,9 +1,9 @@
 package main
 
 import (
+  "fmt"
   "github.com/rafa-acioly/dynacover/commands"
   "github.com/spf13/cobra"
-  "log"
 )
 
 var (
@@ -20,6 +20,8 @@ func main() {
 
   rootCmd.AddCommand(commands.CoverCmd)
 
-  log.Fatal(rootCmd.Execute())
+  if err := rootCmd.Execute(); err == nil {
+    fmt.Println("image generated successfully")
+  }
 }
 
